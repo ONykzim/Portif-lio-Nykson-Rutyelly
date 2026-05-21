@@ -1,0 +1,108 @@
+@import url(https://db.onlinewebfonts.com/c/a189a0696560d69bfb9a3803a0122b5b?family=Poppins+Black);
+@import url(https://db.onlinewebfonts.com/c/2f86dc938a55788d3416b876b43a116a?family=Poppins);
+
+
+
+:root{
+    --primary-color: #0d1117;
+    --secondary-color: #161b22;
+    --header-footer: #010409;
+
+    --principal-color: #58a6ff;
+    --hover-color: #79c0ff;
+
+    --buttom-color: #238636;
+    --buttom-hover:#2ea043;
+
+    --primary-text: #e6edf3;
+    --secondary-text: #c9d1d9;
+    --tertiary-text: #8b949e;
+
+    --border-color: #30363d;
+    --divisory-color:#1f2937;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+
+    color: var(--primary-text);
+
+    font-family: "Poppins";
+}
+
+
+#pb{
+    font-family: "Poppins Black"
+}
+
+
+html{
+    background-color: var(--primary-color);
+    scroll-behavior: smooth;
+}
+
+.container{
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#header {
+    backdrop-filter: blur(6px);
+    background-color: var(--header-footer);
+    padding: 8px 0px;
+}
+
+& section{
+    justify-content: space-between;
+}
+
+#logo{
+   width: 400px; height: auto;
+}
+
+#menu{
+    display: flex;
+    gap: 30px;
+}
+
+
+#cv{
+    color: var(--primary-text);
+    background-color: var(--principal-color);
+    border-radius: 30px;
+    outline: var(--primary-text);
+    padding: 5px;
+}
+
+& a:hover{
+    color: var(--hover-color);
+}
+
+& a{
+   transition: all .5s;
+}
+
+#banner{
+    background-image: url(assets/site/FUNDO.png);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+
